@@ -44,7 +44,8 @@
   ga('send', 'pageview');
 
 </script>
-<script>jQuery(document).ready(function ($) {
+<script>
+$(function (){
    $('#btn-nos').on('click', function() {
      ga('send', 'event', 'link','click', 'Btn Saiba mais foi clicado');
    });
@@ -92,8 +93,7 @@
                 <h1 id="homeHeading">Gestão de Engenharia</h1>
                 <hr>
                 <p>Contribuindo com inovação para a engenharia (introdução)</p>
-                <a id="btn-nos" onClick=function() {
-     ga('send', 'event', 'link','click', 'Btn Saiba mais foi clicado')}  href="#about" class="btn btn-primary btn-xl page-scroll">Saiba mais sobre nós</a>
+                <a id="btn-nos" onClick=anlytics()"  href="#about" class="btn btn-primary btn-xl page-scroll">Saiba mais sobre nós</a>
             </div>
         </div>
     </header>
